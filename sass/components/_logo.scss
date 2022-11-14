@@ -1,0 +1,26 @@
+
+.logo {
+    color: var(--color-accent);
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+
+    &:hover,
+    &:focus {
+        color: var(--color-accent)
+    }
+
+    &__element {
+        color: var(--color-logo-accent);
+
+        &--white {
+            color: var(--color-brand);
+        }
+    }
+
+}
