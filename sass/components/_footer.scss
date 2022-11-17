@@ -8,20 +8,38 @@
     display: block;
     margin-bottom: 20px;
     padding-top: 0;
-    padding-bottom: 0;}
+    padding-bottom: 0;
+
+    @media screen and (max-width: 767px) {
+    text-align: center;
+    font-size: 24px;}
+}
 
 &__adress {
     font-style: normal;
     line-height: 1.7;
+
+}
+&__list-contacts {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 480px) {
+    margin-bottom: 0;
+    }
 }
 
 &__item {
-    margin-bottom: 9px;
+ margin-bottom: 8px;
 
+@media screen and (min-width: 768px) {
+    margin-bottom: 9px;}
 
-&:last-child {
-    margin-bottom: 0;
 }
+
+&__item:last-child {
+    
+    margin-bottom: 0;
 }
 
 &__map {
@@ -39,28 +57,62 @@
     color: var(--color-brand-secondary);
     padding-top: 0;
     padding-bottom: 0;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
     
 }
 
 &__networks-title {
     margin-top: 0;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+    text-align: center;}
 }
 
 &__container {
+
+    @media screen and (min-width: 768px) {
     display: flex;
+    align-items: baseline;}
+
+
+}
+&__container-contacts {
+    @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    }
 }
 
 &__networks {
-    margin-left: 70px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 480px) {
+     margin-bottom: 0;
+    }
+    
+    @media screen and (min-width: 768px) {
+    margin-left: 70px;}
 }
 
 
 &__form {
+    @media screen and (max-width: 767px) {
+text-align: center;}
+
+   @media screen and (min-width: 768px) {
+
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    margin-left: auto;}
 }
 &__form-title {
     font-weight: 700;
@@ -71,12 +123,16 @@
     margin-top: 0;
 }
 &__form-container {
-    display: flex;
-    flex-direction: row;
+@media screen and (max-width: 767px) {
     align-items: center;
 }
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;}
+
+}
 &__input {
-    width: 358px;
+    width: 100%;
     padding: 15px 16px;
     background-color: var(--color-bgd-dark);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -87,6 +143,13 @@
     font-size: 16px;
     line-height: 1.2;
     margin-right: 12px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+    width: 358px;
+    margin-bottom: 0;
+    
+    }
 } 
 &__button {
     display: flex;
@@ -95,5 +158,11 @@
     height: 50px;
     padding: 10px 28px;
     justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    
 }
 }

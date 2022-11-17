@@ -3,9 +3,20 @@
     gap: 30px;
     justify-content: center;
 
+    @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+}
     &__item {
-        width: calc((100% - 150px) / 6);
+        width: calc((100% - 30px) / 2); 
         height: 92px;
+
+        @media screen and (min-width: 480px) {
+         width: calc((100% - 60px) / 3);
+    
+        }
+      @media screen and (min-width: 768px) {
+
+        width: calc((100% - 150px) / 6);}
     }
 
     &__link {

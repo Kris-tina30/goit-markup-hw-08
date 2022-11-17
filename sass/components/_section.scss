@@ -1,11 +1,18 @@
+.features {
+     @media screen and (max-width: 767px) {
+        display: none;
+    }
+    
+}
+
 .section {
     padding-top: 94px;
     background-color: var(--color-brand);
 
-
 &__section-position {
     padding-bottom: 94px;
 }
+
 
 &__title {
     font-weight: 700;
@@ -20,14 +27,36 @@
 &__section-flex {
     display: flex;
 }
-
-&__item {
-    width: calc((100% - 90px) / 4);
-    background-color: var(--color-brand);
-}
 &__list {
-    display: flex;
-    gap: 30px;
+    display: block;
+
+    @media screen and (min-width: 480px) {
+        display: flex;
+        gap: 30px;
+    }
+    @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+}
+
+}
+&__item {
+    align-items: center;
+    background-color: var(--color-brand);
+    margin-bottom: 30px;
+
+
+ 
+
+    @media screen and (min-width: 480px) {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 90px) / 4);
+        }
+        
 }
 
 &__container-icon {
@@ -102,11 +131,15 @@
 
 &__card-team {
     padding-top: 30px;
-    padding-bottom: 30px;
-    width: 270px;
+    padding-bottom: 24px;
+    width: 100%;
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 30px;
+    }
     
 }
 &__portfolio-nav {

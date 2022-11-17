@@ -7,33 +7,75 @@
     padding-bottom: 200px;
 
     &__overlay {
-        max-width: 1600px;
-        height: 600px;
+     
         margin-left: auto;
         margin-right: auto;
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url("../imges/hero.jpg");
+            url("../../imges/hero-mobile.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution:192dpi),
+            (min-resolution:2dppx) {
+            background-image: url("../../imges/hero-mobile@2x.jpg");
+            }
+        }
+
+       @media screen and (min-width: 480px){
+        &__overlay {
+        max-width: 768px;
+        height: 400px;
+        background-image: url("../../imges/hero-tablet.jpg");
+
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            background-image: url("../../imges/hero-tablet@2x.jpg");
+        }
     }
+       }
 
+        @media screen and (min-width: 768px) {
+            &__overlay {
+            max-width: 1600px;
+            height: 600px;
+            background-image: url("../../imges/hero.jpg");
 
-
-    &__container {
-        width: 696px;
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+          background-image: url("../../imges/hero@2x.jpg");
+        }
     }
-
+    }
+    
     &__title {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.4;
+        font-size: 26px;
+        line-height: 1.6;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         margin-bottom: 30px;
         margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 768px) {
+            font-size: 44px;
+            line-height: 1.4;
+        }
+         @media screen and (min-width: 1200px) {
+        width: 696px;
+        
+        }
+
+
     }
 
 }

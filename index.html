@@ -25,7 +25,7 @@
           >Web<span class="logo__element">Studio</span>
         </a>
         <nav class="header__nav">
-          <button type="button" class="header__mobile-munu js-open-menu">
+          <button type="button" class="header__mobile-menu js-open-menu">
             <svg class="" width="40" height="40">
               <use href="./imges/icons.svg#icon-menu-burger"></use>
             </svg>
@@ -63,7 +63,7 @@
 
     <main>
       <section class="hero hero__overlay">
-        <div class="container hero__container">
+        <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="button" type="button" data-modal-open>Замовити послугу</button>
         </div>
@@ -120,7 +120,7 @@
         </div>
       </section>
 
-      <section class="section section__section-flex section__section-position">
+      <section class="section section__section-flex section__section-position features">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="section__list">
@@ -164,6 +164,7 @@
           <ul class="section__list">
             <li class="section__item">
               <img
+              srcset=""
                 src="./imges/designer.jpg"
                 alt="Усміхнений бородатий молодий чоловік в окулярах"
                 width="270"
@@ -378,13 +379,14 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
+        <div class="footer__container-contacts">
         <div>
           <a href="./index.html" lang="en" class="logo footer__logo"
             >Web<span class="logo__element logo__element--white">Studio</span>
           </a>
           <address class="footer__adress">
             <div>
-              <ul>
+              <ul class="footer__list-contacts">
                 <li class="footer__item">
                   <a
                     class="footer__map"
@@ -439,6 +441,7 @@
             </li>
           </ul>
         </div>
+      </div>
 
         <form class="footer__form" name="feedback-form" autocomplete="off" novalidate>
           <p class="footer__form-title">підпишіться на розсилку</p>

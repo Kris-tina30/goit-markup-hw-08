@@ -7,18 +7,31 @@
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: scroll;
+    padding: 93px 15px 94px 15px;
 
     &__modal {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 528px;
-        height: 581px;
+        position: relative;
+        width: 450px;
+        height: 609px;
         background-color: var(--color-brand);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
         overflow: auto;
+        
+
+        @media screen and (min-width: 480px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+
+        @media screen and (min-width: 768px) {
+            width: 528px;
+            height: 581px;
+        }
     }
 
 
@@ -39,9 +52,10 @@
         right: 8px;
         cursor: pointer;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
         &:hover,
         &:focus {
-        color: var(--color-brand);
+        color: var(--color-accent);
             }
     }
 
