@@ -68,7 +68,7 @@
           <button class="button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
-      <section class="section section__section-flex">
+      <section class="section section__section-flex section__section-position">
         <div class="container">
           <h2 class="visually-hidden section__title">Особливості</h2>
           <ul class="section__list">
@@ -120,7 +120,7 @@
         </div>
       </section>
 
-      <section class="section features">
+      <section class="section work">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="section__list">
@@ -172,7 +172,7 @@
                 <source
                   srcset="./imges/designer-tablet.jpg 1x, ./imges/designer-tablet@2x.jpg 2x"
                   src="./imges/designer-tablet.jpg"
-                  media="(min-width: 768px)"
+                  media="(max-width: 1199px)"
                 />
                 <img
                   srcset="./imges/designer.jpg 1x, ./imges/designer@2x.jpg 2x"
@@ -225,7 +225,7 @@
                 <source
                   srcset="./imges/developer-tablet.jpg 1x, ./imges/developer-tablet@2x.jpg 2x"
                   src="./imges/developer-tablet.jpg"
-                  media="(min-width: 768px)"
+                  media="(max-width: 1199px)"
                 />
                 <img
                   srcset="./imges/developer.jpg 1x, ./imges/developer@2x.jpg 2x"
@@ -278,7 +278,7 @@
                 <source
                   srcset="./imges/marketing-tablet.jpg 1x, ./imges/marketing-tablet@2x.jpg 2x"
                   src="./imges/marketing-tablet.jpg"
-                  media="(min-width: 768px)"
+                  media="(max-width: 1199px)"
                 />
                 <img
                   srcset="./imges/marketing.jpg 1x, ./imges/marketing@2x.jpg 2x"
@@ -331,7 +331,7 @@
                 <source
                   srcset="./imges/uidesigner-tablet.jpg 1x, ./imges/uidesigner-tablet@2x.jpg 2x"
                   src="./imges/uidesigner-tablet.jpg"
-                  media="(min-width: 768px)"
+                  media="(max-width: 1199px)"
                 />
                 <img
                   srcset="./imges/uidesigner.jpg 1x, ./imges/uidesigner@2x.jpg 2x"
@@ -606,52 +606,53 @@
           <use href="./imges/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <div class="mobile-menu__container">
+        <ul class="mobile-menu__list-menu">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакти</a></li>
+        </ul>
+        <ul>
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link-contact mobile-menu__link-tel"
+              href="tel:380961111111"
+            >
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link-contact"
+              href="mailto:info@devstudio.com"
+              lang="en"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__list-networks">
+          <li class="mobile-menu__item-networks">
+            <a class="mobile-menu__link mobile-menu__link-networks" href="#" lang="en">Instagram</a>
+          </li>
 
-      <ul class="mobile-menu__list-menu">
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
-        </li>
-        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакти</a></li>
-      </ul>
-      <ul>
-        <li class="mobile-menu__item">
-          <a
-            class="mobile-menu__link mobile-menu__link-contact mobile-menu__link-tel"
-            href="tel:380961111111"
-          >
-            +38 096 111 11 11</a
-          >
-        </li>
-        <li class="mobile-menu__item">
-          <a
-            class="mobile-menu__link mobile-menu__link-contact"
-            href="mailto:info@devstudio.com"
-            lang="en"
-          >
-            info@devstudio.com</a
-          >
-        </li>
-      </ul>
-      <ul class="mobile-menu__list-networks">
-        <li class="mobile-menu__item-networks">
-          <a class="mobile-menu__link mobile-menu__link-networks" href="#" lang="en">Instagram</a>
-        </li>
+          <li class="mobile-menu__item-networks">
+            <a class="mobile-menu__link mobile-menu__link-networks" href="#" lang="en">Twitter</a>
+          </li>
 
-        <li class="mobile-menu__item-networks">
-          <a class="mobile-menu__link mobile-menu__link-networks" href="#" lang="en">Twitter</a>
-        </li>
+          <li class="mobile-menu__item-networks">
+            <a class="mobile-menu__link mobile-menu__link-networks" href="#" lang="en">Facebook</a>
+          </li>
 
-        <li class="mobile-menu__item-networks">
-          <a class="mobile-menu__link mobile-menu__link-networks" href="#" lang="en">Facebook</a>
-        </li>
-
-        <li class="mobile-menu__item-networks">
-          <a class="mobile-menu__link mobile-menu__link-networks" href="#" lang="en">LinkedIn</a>
-        </li>
-      </ul>
+          <li class="mobile-menu__item-networks">
+            <a class="mobile-menu__link mobile-menu__link-networks" href="#" lang="en">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script src="./js/modal.js"></script>

@@ -1,9 +1,8 @@
-.features {
+.work {
     
-    padding-bottom: 94px;
     display: flex;
 
-     @media screen and (max-width: 767px) {
+     @media screen and (max-width: 1200px) {
     display: none;
        
     }
@@ -11,11 +10,23 @@
 }
 
 .section {
-    padding-top: 94px;
+    padding-bottom: 60px;
     background-color: var(--color-brand);
 
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+    }
+
 &__section-position {
-    padding-bottom: 94px;
+
+      padding-top: 60px;
+
+
+    @media screen and (min-width: 1200px) {
+         padding-top: 94px;
+    }
+
+
 }
 
 
@@ -42,7 +53,7 @@
     }
 }
 
-}
+
 &__item {
     align-items: center;
     background-color: var(--color-brand);
@@ -151,7 +162,7 @@ align-items: center;
 margin-bottom: 50px;
 }
 
-
+}
 
 
 

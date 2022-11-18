@@ -41,9 +41,15 @@
 &__button:hover {
     color: var(--color-accent);
 }
+&__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
 &__list-menu {
     margin-bottom: 32px;
+    margin-bottom: auto;
 }
 &__list-networks {
     display: flex;

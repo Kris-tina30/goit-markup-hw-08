@@ -8,8 +8,8 @@
 
     @media screen and (min-width: 1200px) {
         padding-top: 200px;
-        padding-bottom: 200px;
-    }
+        padding-bottom: 200px;}
+    
 
     &__overlay {
         max-width: 1600px;
@@ -26,7 +26,7 @@
         @media (min-device-pixel-ratio: 2),
             (min-resolution:192dpi),
             (min-resolution:2dppx) {
-            background-image: url("../../imges/hero-mobile@2x.jpg");
+            background-image: url("../imges/hero-mobile@2x.jpg");
             }
         }
 
@@ -34,13 +34,13 @@
         &__overlay {
         
         height: 400px;
-        background-image: url("../../imges/hero-tablet.jpg");
+        background-image: url("../imges/hero-tablet.jpg");
 
 
       @media (min-device-pixel-ratio: 2),
         (min-resolution:192dpi),
         (min-resolution:2dppx) {
-            background-image: url("../../imges/hero-tablet@2x.jpg");
+            background-image: url("../imges/hero-tablet@2x.jpg");
         }
     }
        }
@@ -49,13 +49,13 @@
             &__overlay {
             
             height: 600px;
-            background-image: url("../../imges/hero.jpg");
+            background-image: url("../imges/hero.jpg");
 
     
         @media (min-device-pixel-ratio: 2),
         (min-resolution:192dpi),
         (min-resolution:2dppx) {
-          background-image: url("../../imges/hero@2x.jpg");
+          background-image: url("../imges/hero@2x.jpg");
         }
     }
     }
