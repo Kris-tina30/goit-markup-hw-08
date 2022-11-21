@@ -1,16 +1,37 @@
 
 .portfolio {
+    
+@media screen and (min-width: 768px) {
 display: flex;
 flex-wrap: wrap;
-gap: 30px;
+gap: 30px;}
 
 
 &__item {
 background-color: var(--color-brand);
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 30px) / 2);
 }
+
+}
+&__item:not(last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}
+
 &__link {
 display: block;
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+
 &:hover,
 &:focus {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -21,6 +42,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 &__wrap {
 position: relative;
 overflow: hidden;
+
 }
 &__overley {
 position: absolute;
@@ -43,10 +65,11 @@ margin: auto;
 }
 &__card {
  padding: 20px 24px;
- width: 370px;
+ width: 100%;
 border-bottom: 1px solid var(--color-solid-portfolio);
 border-left: 1px solid var(--color-solid-portfolio);
 border-right: 1px solid var(--color-solid-portfolio);
+flex-grow: 1;
 }
 &__title {
 margin-top: 0;

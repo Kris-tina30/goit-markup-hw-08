@@ -32,9 +32,10 @@
 
        @media screen and (min-width: 768px){
         &__overlay {
-        
         height: 400px;
-        background-image: url("../imges/hero-tablet.jpg");
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url("../imges/hero-tablet.jpg");
 
 
       @media (min-device-pixel-ratio: 2),
@@ -49,7 +50,9 @@
             &__overlay {
             
             height: 600px;
-            background-image: url("../imges/hero.jpg");
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url("../imges/hero.jpg");
 
     
         @media (min-device-pixel-ratio: 2),

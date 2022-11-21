@@ -19,16 +19,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
+        <a href="./index.html" lang="en" class="logo"
+          >Web<span class="logo__element">Studio</span>
+        </a>
         <nav class="header__nav">
-          <a href="./index.html" lang="en" class="logo"
-            >Web<span class="logo__element">Studio</span>
-          </a>
+          <button type="button" class="header__mobile-menu js-open-menu">
+            <svg class="" width="40" height="40">
+              <use href="./imges/icons.svg#icon-menu-burger"></use>
+            </svg>
+          </button>
           <ul class="header__list">
             <li>
               <a class="header__link" href="./index.html">Студія</a>
@@ -77,11 +82,29 @@
               <li class="portfolio__item">
                 <a href="#" class="portfolio__link">
                   <div class="portfolio__wrap">
-                    <img
-                      src="./imges/hechnokriak.jpg"
-                      alt="Екран лептопу з профілями людей"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./imges/hechnokriak-mobile.jpg    1x,
+                          ./imges/hechnokriak-mobile@2x.jpg 2x
+                        "
+                        src="./imges/developer-mobile.jpg"
+                        media="(max-width: 767px)"
+                      />
+                      <source
+                        srcset="
+                          ./imges/hechnokriak-tablet.jpg    1x,
+                          ./imges/hechnokriak-tablet@2x.jpg 2x
+                        "
+                        src="./imges/hechnokriak-tablet.jpg"
+                        media="(max-width: 1199px)"
+                      />
+                      <img
+                        srcset="./imges/hechnokriak.jpg 1x, ./imges/hechnokriak@2x.jpg 2x"
+                        src="./imges/hechnokriak.jpg"
+                        alt="Екран лептопу з профілями людей"
+                      />
+                    </picture>
                     <div class="portfolio__overley">
                       <p class="portfolio__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -100,7 +123,23 @@
               <li class="portfolio__item">
                 <a href="#" class="portfolio__link">
                   <div class="portfolio__wrap">
-                    <img src="./imges/poster.jpg" alt="Двоє баскетболістів з м'ячем" width="370" />
+                    <picture>
+                      <source
+                        srcset="./imges/poster-mobile.jpg 1x, ./imges/poster-mobile@2x.jpg 2x"
+                        src="./imges/poster-mobile.jpg"
+                        media="(max-width: 767px)"
+                      />
+                      <source
+                        srcset="./imges/poster-tablet.jpg 1x, ./imges/poster-tablet@2x.jpg 2x"
+                        src="./imges/poster-tablet.jpg"
+                        media="(max-width: 1199px)"
+                      />
+                      <img
+                        srcset="./imges/poster.jpg 1x, ./imges/poster@2x.jpg 2x"
+                        src="./imges/poster.jpg"
+                        alt="Двоє баскетболістів з м'ячем"
+                      />
+                    </picture>
                     <div class="portfolio__overley">
                       <p class="portfolio__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -120,7 +159,23 @@
               <li class="portfolio__item">
                 <a href="#" class="portfolio__link">
                   <div class="portfolio__wrap">
-                    <img src="./imges/restauran.jpg" alt="логотип рибного ресторану" width="370" />
+                    <picture>
+                      <source
+                        srcset="./imges/restauran-mobile.jpg 1x, ./imges/restauran-mobile@2x.jpg 2x"
+                        src="./imges/restauran-mobile.jpg"
+                        media="(max-width: 767px)"
+                      />
+                      <source
+                        srcset="./imges/restauran-tablet.jpg 1x, ./imges/restauran-tablet@2x.jpg 2x"
+                        src="./imges/restauran-tablet.jpg"
+                        media="(max-width: 1199px)"
+                      />
+                      <img
+                        srcset="./imges/restauran.jpg 1x, ./imges/restauran@2x.jpg 2x"
+                        src="./imges/restauran.jpg"
+                        alt="логотип рибного ресторану"
+                      />
+                    </picture>
                     <div class="portfolio__overley">
                       <p class="portfolio__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -138,7 +193,23 @@
               <li class="portfolio__item">
                 <a href="#" class="portfolio__link">
                   <div class="portfolio__wrap">
-                    <img src="./imges/prime.jpg" alt="Навушники" width="370" />
+                    <picture>
+                      <source
+                        srcset="./imges/prime-mobile.jpg 1x, ./imges/prime-mobile@2x.jpg 2x"
+                        src="./imges/prime-mobile.jpg"
+                        media="(max-width: 767px)"
+                      />
+                      <source
+                        srcset="./imges/prime-tablet.jpg 1x, ./imges/prime-tablet@2x.jpg 2x"
+                        src="./imges/prime-tablet.jpg"
+                        media="(max-width: 1199px)"
+                      />
+                      <img
+                        srcset="./imges/prime.jpg 1x, ./imges/prime@2x.jpg 2x"
+                        src="./imges/prime.jpg"
+                        alt="Навушники"
+                      />
+                    </picture>
                     <div class="portfolio__overley">
                       <p class="portfolio__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -156,11 +227,23 @@
               <li class="portfolio__item">
                 <a href="#" class="portfolio__link">
                   <div class="portfolio__wrap">
-                    <img
-                      src="./imges/boxes.jpg"
-                      alt="Два бруски білого та коричневого кольору"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="./imges/boxes-mobile.jpg 1x, ./imges/boxes-mobile@2x.jpg 2x"
+                        src="./imges/boxes-mobile.jpg"
+                        media="(max-width: 767px)"
+                      />
+                      <source
+                        srcset="./imges/boxes-tablet.jpg 1x, ./imges/boxes-tablet@2x.jpg 2x"
+                        src="./imges/boxes-tablet.jpg"
+                        media="(max-width: 1199px)"
+                      />
+                      <img
+                        srcset="./imges/boxes.jpg 1x, ./imges/boxes@2x.jpg 2x"
+                        src="./imges/boxes.jpg"
+                        alt="Два бруски білого та коричневого кольору"
+                      />
+                    </picture>
                     <div class="portfolio__overley">
                       <p class="portfolio__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -178,11 +261,26 @@
               <li class="portfolio__item">
                 <a href="#" class="portfolio__link">
                   <div class="portfolio__wrap">
-                    <img
-                      src="./imges/inspiration.jpg"
-                      alt="Комп'ютер з відкритим сайтом"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./imges/inspiration-mobile.jpg    1x,
+                          ./imges/inspiration-mobile@2x.jpg 2x
+                        "
+                        src="./imges/inspiration-mobile.jpg"
+                        media="(max-width: 767px)" />
+                      <source
+                        srcset="
+                          ./imges/inspiration-tablet.jpg    1x,
+                          ./imges/inspiration-tablet@2x.jpg 2x
+                        "
+                        src="./imges/inspiration-tablet.jpg"
+                        media="(max-width: 1199px)" />
+                      <img
+                        srcset="./imges/inspiration.jpg 1x, ./imges/inspiration@2x.jpg 2x"
+                        src="./imges/inspiration.jpg"
+                        alt="Комп'ютер з відкритим сайтом"
+                    /></picture>
                     <div class="portfolio__overley">
                       <p class="portfolio__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -200,11 +298,26 @@
               <li class="portfolio__item">
                 <a href="#" class="portfolio__link">
                   <div class="portfolio__wrap">
-                    <img
-                      src="./imges/limitededition.jpg"
-                      alt="Відкрита книга з фото-рекламою"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./imges/limitededition-mobile.jpg    1x,
+                          ./imges/limitededition-mobile@2x.jpg 2x
+                        "
+                        src="./imges/limitededition-mobile.jpg"
+                        media="(max-width: 767px)" />
+                      <source
+                        srcset="
+                          ./imges/limitededition-tablet.jpg    1x,
+                          ./imges/limitededition-tablet@2x.jpg 2x
+                        "
+                        src="./imges/limitededition-tablet.jpg"
+                        media="(max-width: 1199px)" />
+                      <img
+                        srcset="./imges/limitededition.jpg 1x, ./imges/limitededition@2x.jpg 2x"
+                        src="./imges/limitededition.jpg"
+                        alt="Відкрита книга з фото-рекламою"
+                    /></picture>
                     <div class="portfolio__overley">
                       <p class="portfolio__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -222,7 +335,23 @@
               <li class="portfolio__item">
                 <a href="#" class="portfolio__link">
                   <div class="portfolio__wrap">
-                    <img src="./imges/lab.jpg" alt="Біла бірка з чорним написом" width="370" />
+                    <picture>
+                      <source
+                        srcset="./imges/lab-mobile.jpg 1x, ./imges/lab-mobile@2x.jpg 2x"
+                        src="./imges/lab-mobile.jpg"
+                        media="(max-width: 767px)"
+                      />
+                      <source
+                        srcset="./imges/lab-tablet.jpg 1x, ./imges/lab-tablet@2x.jpg 2x"
+                        src="./imges/lab-tablet.jpg"
+                        media="(max-width: 1199px)"
+                      />
+                      <img
+                        srcset="./imges/lab.jpg 1x, ./imges/lab@2x.jpg 2x"
+                        src="./imges/lab.jpg"
+                        alt="Біла бірка з чорним написом"
+                      />
+                    </picture>
                     <div class="portfolio__overley">
                       <p class="portfolio__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -240,11 +369,20 @@
               <li class="portfolio__item">
                 <a href="#" class="portfolio__link">
                   <div class="portfolio__wrap">
-                    <img
-                      src="./imges/business.jpg"
-                      alt="За робочим столом людина друкує"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="./imges/business-mobile.jpg 1x, ./imges/business-mobile@2x.jpg 2x"
+                        src="./imges/business-mobile.jpg"
+                        media="(max-width: 767px)" />
+                      <source
+                        srcset="./imges/business-tablet.jpg 1x, ./imges/business-tablet@2x.jpg 2x"
+                        src="./imges/business-tablet.jpg"
+                        media="(max-width: 1199px)" />
+                      <img
+                        srcset="./imges/business.jpg 1x, ./imges/business@2x.jpg 2x"
+                        src="./imges/business.jpg"
+                        alt="За робочим столом людина друкує"
+                    /></picture>
                     <div class="portfolio__overley">
                       <p class="portfolio__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -264,70 +402,155 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container footer__container">
-        <div>
-          <a href="./index.html" lang="en" class="logo footer__logo"
-            >Web<span class="logo__element logo__element--white">Studio</span>
-          </a>
-          <address class="footer__adress">
-            <div>
-              <ul class="">
-                <li class="footer__item">
-                  <a
-                    class="footer__map"
-                    href="https://maps.app.goo.gl/bk3m361bPa9UG51q8?g_st=iv"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    >м. Київ, пр-т Лесі Українки, 26
-                  </a>
-                </li>
-                <li class="footer__item">
-                  <a class="contacts footer__contacts" href="mailto:info@devstudio.com" lang="en"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li class="footer__item">
-                  <a class="contacts footer__contacts" href="tel:380961111111">+38 096 111 11 11</a>
-                </li>
-              </ul>
-            </div>
-          </address>
+        <div class="footer__container-contacts">
+          <div>
+            <a href="./index.html" lang="en" class="logo footer__logo"
+              >Web<span class="logo__element logo__element--white">Studio</span>
+            </a>
+            <address class="footer__adress">
+              <div>
+                <ul class="footer__list-contacts">
+                  <li class="footer__item">
+                    <a
+                      class="footer__map"
+                      href="https://maps.app.goo.gl/bk3m361bPa9UG51q8?g_st=iv"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      >м. Київ, пр-т Лесі Українки, 26
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="contacts footer__contacts" href="mailto:info@devstudio.com" lang="en"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="contacts footer__contacts" href="tel:380961111111"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </address>
+          </div>
+          <div class="footer__networks">
+            <h4 class="footer__networks-title">приєднуйтесь</h4>
+            <ul class="networks">
+              <li class="networks__item">
+                <a href="#" class="networks__link networks__link--color">
+                  <svg class="networks__icon" width="20" height="20">
+                    <use href="./imges/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="networks__item">
+                <a href="#" class="networks__link networks__link--color">
+                  <svg class="networks__icon" width="20" height="20">
+                    <use href="./imges/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="networks__item">
+                <a href="#" class="networks__link networks__link--color">
+                  <svg class="networks__icon" width="20" height="20">
+                    <use href="./imges/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="networks__item">
+                <a href="#" class="networks__link networks__link--color">
+                  <svg class="networks__icon" width="20" height="20">
+                    <use href="./imges/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__networks">
-          <h4 class="footer__networks-title">приєднуйтесь</h4>
-          <ul class="networks">
-            <li class="networks__item">
-              <a href="#" class="networks__link networks__link--color">
-                <svg class="networks__icon" width="20" height="20">
-                  <use href="./imges/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="networks__item">
-              <a href="#" class="networks__link networks__link--color">
-                <svg class="networks__icon" width="20" height="20">
-                  <use href="./imges/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="networks__item">
-              <a href="#" class="networks__link networks__link--color">
-                <svg class="networks__icon" width="20" height="20">
-                  <use href="./imges/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="networks__item">
-              <a href="#" class="networks__link networks__link--color">
-                <svg class="networks__icon" width="20" height="20">
-                  <use href="./imges/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
+        <form class="footer__form" name="feedback-form" autocomplete="off" novalidate>
+          <p class="footer__form-title">підпишіться на розсилку</p>
+          <div class="footer__form-container">
+            <input
+              class="footer__input"
+              type="email"
+              name="email"
+              id="user-mail"
+              placeholder="E-mail"
+            />
+
+            <button class="button footer__button" type="submit">
+              Підписатися<svg class="button__icon" width="24" height="24">
+                <use href="./imges/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button type="button" class="mobile-menu__button js-close-menu">
+        <svg class="button__icon-close" width="40" height="40">
+          <use href="./imges/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__container">
+        <ul class="mobile-menu__list-menu">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакти</a></li>
+        </ul>
+        <ul>
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link-contact mobile-menu__link-tel"
+              href="tel:380961111111"
+            >
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link-contact"
+              href="mailto:info@devstudio.com"
+              lang="en"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__list-networks">
+          <li class="mobile-menu__item-networks">
+            <a class="mobile-menu__link mobile-menu__link-networks" href="#" lang="en">Instagram</a>
+          </li>
+
+          <li class="mobile-menu__item-networks">
+            <a class="mobile-menu__link mobile-menu__link-networks" href="#" lang="en">Twitter</a>
+          </li>
+
+          <li class="mobile-menu__item-networks">
+            <a class="mobile-menu__link mobile-menu__link-networks" href="#" lang="en">Facebook</a>
+          </li>
+
+          <li class="mobile-menu__item-networks">
+            <a class="mobile-menu__link mobile-menu__link-networks" href="#" lang="en">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
